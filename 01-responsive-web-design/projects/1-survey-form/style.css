@@ -21,7 +21,10 @@ form {
   border-radius: 25px;
   background-color: aliceblue;
 }
-
+fieldset {
+  border: none;
+  /* flex: auto; */
+}
 label {
   display: block;
   /* text-align: left; */
@@ -31,4 +34,32 @@ label {
 input {
   display: block;
   margin: 0.5em auto 2em auto;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  display: inline;
+}
+
+legend {
+  padding: 0 auto 0 auto;
+  margin: 0.5em auto 0 auto;
+}
+
+.radio-label,
+.checkbox-label {
+  display: inline;
+  margin: 0 0 0 0;
+  flex: auto;
+}
+
+.favorite-color-options,
+.personality-options {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.personality-options {
+  width: 75%;
 }

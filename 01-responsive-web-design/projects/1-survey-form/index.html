@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>John's Ugly Survey</title>
   </head>
   <body>
     <header>
-      <h1 class="title">John's Survey</h1>
-      <p class="description">Tell me a little bit more about yourself!</p>
+      <h1 id="title">John's Ugly Survey</h1>
+      <p id="description">Tell me a little bit more about yourself!</p>
     </header>
     <main>
-      <form action="TODO:" class="survey-form">
+      <form action="TODO:" id="survey-form">
         <label for="name" id="name-label"
           >Name:
           <input
@@ -42,8 +42,67 @@
             max="13"
             placeholder="13"
         /></label>
+
+        <select name="dropdown" id="dropdown">
+          <option value="">(choose your favorite doggies</option>
+          <option value="pearl">Pearl the Good Girl</option>
+          <option value="crazy">I'm crazy</option>
+        </select>
+        <fieldset class="favorite-color">
+          <legend class="favorite-color-label">Favorite Color?</legend>
+          <div class="favorite-color-options">
+            <label class="radio-label" for="purple">
+              <input type="radio" name="favorite-color" value="purple
+              id="purple" /> Purple
+            </label>
+            <label class="radio-label" for="other">
+              <input type="radio" name="favorite-color" value="other id="other"
+              /> Other
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>What's your personality?</legend>
+          <div class="personality-options">
+            <label class="checkbox-label" for="loving">
+              <input
+                id="loving"
+                type="checkbox"
+                name="personality"
+                value="loving"
+                checked
+              />
+              Loving</label
+            >
+            <label class="checkbox-label" for="lazy">
+              <input
+                id="lazy"
+                type="checkbox"
+                name="personality"
+                value="lazy"
+              />
+              Lazy</label
+            >
+            <label class="checkbox-label" for="energetic">
+              <input
+                id="energetic"
+                type="checkbox"
+                name="personality"
+                value="energetic"
+              />
+              Energetic</label
+            >
+          </div>
+        </fieldset>
+        <textarea
+          name="comments"
+          id="comments"
+          cols="30"
+          rows="10"
+          placeholder="Comments?"
+        ></textarea>
         <!-- Submit Button -->
-        <input type="submit" value="Submit" />
+        <input id="submit" type="submit" value="Submit" />
       </form>
     </main>
   </body>
